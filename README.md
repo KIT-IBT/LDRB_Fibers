@@ -1,9 +1,9 @@
 # Adapted LDRB method for ventricular fibers
 
-This is a MATLAB implementation of the Laplace–Dirichlet Rule-Based (LDRB) algorithm for generating ventricular fibers. The original algorithm [[1](#1)] was adapted to eliminate a discontinuity of fibers in the free walls and to yield a fiber rotation that is directly proportional to the transmural Laplace solution (i.e., approximately linear across the wall).
+This is a MATLAB implementation of the Laplace–Dirichlet Rule-Based (LDRB) algorithm for generating ventricular fibers. The original algorithm [[1](#1)] was adapted to eliminate a discontinuity of fibers in the free walls and to yield a fiber rotation that is directly proportional to the transmural Laplace solution (approximately linear across the wall).
 &nbsp;  
 &nbsp;  
-![Fibers](https://user-images.githubusercontent.com/31965820/107209438-184bd080-6a03-11eb-9e28-63be9219f6b0.jpg)
+![Fibers](https://user-images.githubusercontent.com/31965820/107220831-1b4ebd00-6a13-11eb-97a3-c883126692b7.jpg)
 
 ## Dependencies
 
