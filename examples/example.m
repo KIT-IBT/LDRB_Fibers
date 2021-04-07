@@ -31,13 +31,13 @@ cfg.betaWallEpi    = betaEpi;
 cfg.exportIntermediateResults = false;
 cfg.exportFinalResult = true;
 cfg.exportFiber = true;
-cfg.exportSheet = false;
-cfg.exportSheetnormal = false;
+cfg.exportSheet = true;
+cfg.exportSheetnormal = true;
 cfg.exportAngles = false;
 cfg.outputAngleUnit = 'rad';
 cfg.exportDebugAngle = true;
 cfg.tol = 1e-12;
 cfg.maxit = 1000;
 
-res = ldrb_main_original(cfg);
-% res = ldrb_main_adapted(cfg);
+% res = ldrb_main_original(cfg);
+res = ldrb_main_adapted(cfg);

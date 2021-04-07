@@ -179,10 +179,10 @@ if ~cfg.onlyOneVentricle
    res.pointData.lapEpi = lapEpi;
 end
 
-vol.pointData.laplace_ab = single(lapAb);
-vol.pointData.laplace_epi = single(lapEpi);
-vol.pointData.laplace_lv = single(lapLv);
-vol.pointData.laplace_rv = single(lapRv);
+% vol.pointData.laplace_ab = single(lapAb);
+% vol.pointData.laplace_epi = single(lapEpi);
+% vol.pointData.laplace_lv = single(lapLv);
+% vol.pointData.laplace_rv = single(lapRv);
 
 fprintf('%.1f seconds\n', toc);
 
@@ -299,8 +299,8 @@ parfor i = 1:numCells
     end
     
     f  = R(:,1)';
-    s  = R(:,2)';
-    sn = R(:,3)';
+    sn = R(:,2)';
+    s  = R(:,3)';
     fiber(i,:) = f;
     sheet(i,:) = s;
     sheetnormal(i,:) = sn;
@@ -345,7 +345,7 @@ fprintf('%s%.1f seconds\n', repmat(char(8),12,1), toc);
 %% Exporting result
 
 if cfg.exportFiber
-    vol.cellData.fiber = fiber;
+    vol.cellData.Fiber = fiber;
 end
 if cfg.exportSheet
     vol.cellData.Sheet = sheet;
