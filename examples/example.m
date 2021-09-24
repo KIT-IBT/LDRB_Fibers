@@ -10,13 +10,13 @@ alphaEpi  = -60;
 betaEndo  = 0;
 betaEpi   = 0;
 
-if ~exist('result', 'dir')
-    mkdir('result');
+if ~exist('result_coarse', 'dir')
+    mkdir('result_coarse');
 end
 
 clear cfg;
-cfg.sourceDir = 'input';
-cfg.targetPrefix = 'result/heart_fiber';
+cfg.sourceDir = 'input_coarse';
+cfg.targetPrefix = 'result_coarse/heart';
 cfg.onlyOneVentricle = false;
 cfg.volName = 'heart';
 cfg.surNames = {'heart'};
